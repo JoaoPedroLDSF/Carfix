@@ -1,0 +1,214 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-image: url('/static/imagens/Fundo.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;     
+  justify-content: flex-end;
+  padding-right: 20%;
+  color: #fff;
+}
+
+.form-box {
+  background: rgb(71, 67, 67);
+  border-radius: 16px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+input {
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.links a {
+  color: #ffffffcc;
+  text-decoration: none;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+.btn {
+  padding: 12px;
+  background-color: #00c896;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #009d77;
+}
+
+@media (max-width: 480px) {
+  .form-box {
+    padding: 20px;
+    transform: translateX(20px);
+  }
+
+  .btn {
+    padding: 10px;
+  }
+
+  .links {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+}
+
+.logo-mobile {
+  display: none;
+  width: 150px;
+  margin: 0 auto 20px; 
+}
+
+
+@media (max-width: 480px) {
+  .logo-mobile {
+    display: block;
+    margin-right: 50px;
+    margin-left: auto; 
+  }
+}
+
+* {
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+    body {
+      background-color: #121212;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      color: #e0e0e0;
+    }
+    
+    .container {
+      background-color: #1e1e1e;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      padding: 30px;
+      width: 100%;
+      max-width: 450px;
+      border: 1px solid #333;
+    }
+    
+    h1 {
+      color: #ff4444;
+      text-align: center;
+      margin-bottom: 25px;
+      font-size: 24px;
+    }
+    
+    .alerta {
+      background-color: #331111;
+      color: #ff6666;
+      padding: 12px;
+      border-radius: 5px;
+      margin-bottom: 20px;
+      text-align: center;
+      font-size: 14px;
+      border: 1px solid #ff4444;
+    }
+    
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    
+    label {
+      font-weight: 600;
+      color: #ff4444;
+      font-size: 14px;
+    }
+    
+    input {
+      padding: 12px 15px;
+      border: 1px solid #444;
+      border-radius: 5px;
+      font-size: 14px;
+      transition: border 0.3s;
+      background-color: #2d2d2d;
+      color: #e0e0e0;
+    }
+    
+    input:focus {
+      outline: none;
+      border-color: #ff4444;
+    }
+    
+    input::placeholder {
+      color: #777;
+    }
+    
+    .btn {
+      background-color: #ff4444;
+      color: white;
+      border: none;
+      padding: 12px;
+      border-radius: 5px;
+      font-weight: 600;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s;
+      margin-top: 10px;
+    }
+    
+    .btn:hover {
+      background-color: #cc0000;
+    }
+    
+    .links {
+      text-align: center;
+      margin-top: 20px;
+    }
+    
+    .links a {
+      color: #ff4444;
+      text-decoration: none;
+      font-size: 14px;
+      transition: color 0.3s;
+    }
+    
+    .links a:hover {
+      color: #cc0000;
+      text-decoration: underline;
+    }

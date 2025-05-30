@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/static/css/esquecer.css">
+  <title>Esqueceu a senha</title>
+</head>
+<body>
+  <div class="container">
+    <img src="/static/imagens/logo.png" alt="Logo Carfix" class="logo-mobile">
+
+    <form class="form-box" action="/esquecer" method="post">
+      {% with mensagens = get_flashed_messages() %}
+        {% if mensagens %}
+          <h1>Esqueceu a senha</h1>
+          <p style="color: #fff; text-align: center; margin-bottom: 20px;">{{ mensagens[0] }}</p>
+          <div class="links">
+            <a href="/">Voltar ao login</a>
+          </div>
+        {% else %}
+          <h1>Esqueceu a senha</h1>
+
+          <label for="email">E-mail</label>
+          <input type="text" id="email" name="email" placeholder="Insira o seu e-mail" required>
+
+          <button type="submit" class="btn">Enviar</button>
+
+          <div class="links">
+            <a href="/">Voltar ao login</a>
+          </div>
+        {% endif %}
+      {% endwith %}
+    </form>
+
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
+
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+  </div>
+</body>
+</html>
